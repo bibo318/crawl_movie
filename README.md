@@ -6,6 +6,8 @@
 ![Alt text](Screenshot-2023-04-08-141958.png?raw=true "Image Demo")
 
 ## CHANGELOGS
+  - Update 29/05/2023
+    + Thêm Chức năng custem thêm link api tùy chọn
   - Update 13/04/2023
     + Fix định dạng trailer
   - Update 08/04/2023
