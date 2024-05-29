@@ -175,7 +175,12 @@ function crawl_tools()
 				<div class="crawl_page">
 					Thu thập thông tin trang: Từ <input type="number" name="page_from" value="">
 					To <input type="number" name="page_to" value="">
+					
 					<div id="get_list_movies" class="primary">Get danh sách phim</div>
+				</div>
+
+				<div class="crawl_page">
+					Nhập link: <input type="text" id="linkapi-inp" name="linkapi" value="">
 				</div>
 
 				<div class="crawl_page">

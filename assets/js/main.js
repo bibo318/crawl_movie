@@ -41,6 +41,7 @@ jQuery(function ($) {
   const divMsgCrawlError = $("div#result_error");
   const textAreaResultSuccess = $("textarea#list_crawl_success");
   const textAreaResultError = $("textarea#list_crawl_error");
+  const inputLinkApi = $("input[name=linkapi]");
 
   buttonRollMovies.on("click", () => {
     var listLink = textArealistMovies.val();
@@ -53,10 +54,24 @@ jQuery(function ($) {
   buttonGetListMovies.on("click", () => {
     divMsg.show(300);
     textArealistMovies.show(300);
-    crawl_page_callback(inputPageFrom.val());
+    // Lấy giá trị mới của input link API
+    let inputLinkApiValue = inputLinkApi.val().trim();
+//    console.log("Giá trị mới của input link API:", inputLinkApiValue);
+    // Gọi hàm callback với giá trị mới của input link API
+    crawl_page_callback(inputPageFrom.val(), inputLinkApiValue);
   });
-  const crawl_page_callback = (currentPage) => {
-    var urlPageCrawl = `https://apii.online/apii/danh-sach/phim-moi-cap-nhat?page=${currentPage}`;
+
+  const crawl_page_callback = (currentPage, inputLinkApiValue) => {
+//    console.log("currentPage:", currentPage);
+//    console.log("inputLinkApiValue:", inputLinkApiValue);
+    var urlPageCrawl = '';
+
+    if (inputLinkApiValue === '' || inputLinkApiValue == null) {
+      urlPageCrawl = `https://apii.online/apii/danh-sach/phim-moi-cap-nhat?page=${currentPage}`;
+    } else {
+      urlPageCrawl = inputLinkApiValue + `${currentPage}`;
+    }
+//    console.log("URL Page Crawl:", urlPageCrawl); // In URL để kiểm tra
 
     if (currentPage < inputPageTo.val()) {
       divMsgText.html("Done!");
@@ -81,10 +96,12 @@ jQuery(function ($) {
 
         textArealistMovies.val(currentList);
         currentPage--;
-        crawl_page_callback(currentPage);
+        // Gọi lại hàm callback với trang tiếp theo và giá trị mới của input link API
+        crawl_page_callback(currentPage, inputLinkApiValue);
       },
     });
   };
+    
 
   var inputFilterType = [];
   var inputFilterCategory = [];
