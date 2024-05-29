@@ -1,11 +1,12 @@
-# PLUGINS CRAWL APII
-  - Test trên bản Halimthemes 5.5.4 Nulled
+# PLUGINS CRAWL APII MOD
+  - Hoạt động hoàn hảo trên bản Halimthemes 5.5.4
+![DEMO](img/1.png)
 
-![Alt text](Screenshot-2023-04-08-141930.png?raw=true "Image Demo")
-
-![Alt text](Screenshot-2023-04-08-141958.png?raw=true "Image Demo")
-
+### Hay thì cho mình xin 1 🌟   
+### Để làm động lực update thêm nhiều tính năng hơn nữa 
 ## CHANGELOGS
+  - Update 29/05/2023
+    +Thêm Chức năng nhập thêm link api tùy chọn
   - Update 13/04/2023
     + Fix định dạng trailer
   - Update 08/04/2023
