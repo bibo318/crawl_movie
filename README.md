@@ -6,7 +6,11 @@
 ### Để làm động lực update thêm nhiều tính năng hơn nữa 
 ## CHANGELOGS
   - Update 29/05/2023
+<<<<<<< HEAD
     +Thêm Chức năng nhập thêm link api tùy chọn
+=======
+    + Thêm Chức năng custem thêm link api tùy chọn
+>>>>>>> 3b8bf436662d741959647215d2061289b594d50f
   - Update 13/04/2023
     + Fix định dạng trailer
   - Update 08/04/2023
