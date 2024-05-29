@@ -8,7 +8,7 @@
 
 ## CHANGELOGS
   - Update 29/05/2023
-    +Thêm Chức năng nhập thêm link api tùy chọn
+    + Thêm Chức năng nhập thêm link api tùy chọn
   - Update 13/04/2023
     + Fix định dạng trailer
   - Update 08/04/2023
